@@ -28,7 +28,3 @@ def test_protocol_rejects_incomplete():
     assert not isinstance(_BadProvider(), DataProvider)
 
 
-@pytest.mark.skip(reason="SchwabProvider is private (gitignored) — cannot be tested in open-source build")
-def test_schwab_provider_satisfies_protocol():
-    from providers.schwab_provider import SchwabProvider
-    assert isinstance(SchwabProvider(), DataProvider)

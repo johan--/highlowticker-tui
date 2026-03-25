@@ -36,5 +36,5 @@ def test_invalid_crypto_broker_raises():
 
 
 def test_all_valid_equity_brokers():
-    for broker in ("schwab", "alpaca", "webull", "tastytrade"):
+    for broker in ("alpaca", "webull", "tastytrade"):
         assert get_equity_broker({"equity": {"broker": broker}}) == broker
