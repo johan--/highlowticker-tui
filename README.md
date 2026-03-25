@@ -15,13 +15,15 @@ Live demo: **[highlowtick.com](https://highlowtick.com)**
 ```bash
 git clone https://github.com/jach8/highlowticker-tui
 cd highlowticker-tui
-python3 -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+python3 -m venv highlowticker-venv
+source highlowticker-venv/bin/activate  # Windows: highlowticker-venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
 ```
 
 That's it. No config required — runs on Yahoo Finance (90s polling) out of the box.
+
+> To exit the venv, run `deactivate`. To delete it, run `rm -rf highlowticker-venv`.
 
 ---
 
